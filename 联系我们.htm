@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pmDcZICB1iEdC5QuVG9O7uwT"></script>
+		<script type="text/javascript">
+			$(window).ready(function() {
+				$(".header-big").click(function() {
+					$("#search").fadeToggle();
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--header开始-->
+		<div class="header">
+			<div class="header_bg">
+				<div class="logo">
+					<div class="logo_r">
+						<ul class="header-ul">
+							<li class="header-li">
+								<a href="#">网站首页</a>
+							</li>
+							<li class="header-li">
+								<a href="#">关于我们</a>
+							</li>
+							<li class="header-li">
+								<a href="#">产品中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">工程案例</a>
+							</li>
+							<li class="header-li">
+								<a href="#">新闻中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">商学院</a>
+							</li>
+							<li class="header-li">
+								<a href="#">招商加盟</a>
+							</li>
+							<li class="header-li">
+								<a href="#">人才招聘</a>
+							</li>
+							<li class="header-li">
+								<a href="#">联系我们</a>
+							</li>
+							<li class="header-big" id="head-big"><img src="img/bigjing.png" /></li>
+							<li class="header-phone">
+								<a href="javascript:"><img src="img/phone.png" />400-0371-816</a>
+							</li>
+						</ul>
+						<div class="hear-search" id="search">
+							<form action="#" method="post">
+								<input type="text" placeholder="请输入你要查找的内容" />
+								<input type="button" id="button" />
+							</form>
+						</div>
+					</div>
+					<div class="logo_l">
+						<img src="img/logo.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--banner开始-->
+		<div class="banner">
+			<div class="banner_bg">
+				<div id="slideBox" class="slideBox">
+					<div class="hd">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+
+				</div>
+				<script>
+					jQuery(".slideBox").slide({
+						mainCell: ".bd ul",
+						autoPlay: true
+					});
+				</script>
+			</div>
+		</div>
+		<!--section_1开始-->
+		<div class="section section_3">
+			<div class="section_bg section_3">
+				<div class="location">
+					<a href="javascript:"><img src="img/hours.png" align="left" id="ditu" class="hours" width="25px" height="25px" /></a>
+					<p >当前位置：<a href="#">网站首页 </a>><a href="#"> 业务范围</a> </p>
+				</div>
+				<div class="button">
+					<a href="#">联系我们</a>
+	
+				</div>
+				<div id="map" class="ditu"></div>
+				<div class="tubiao">
+					<div class="left">
+						<img src="img/ditu.png" width="30px" />
+						<p class="ditu-line">——</p>
+						<p class="ditu-we">郑州市二七区航海路二七中心A座619室 </p>
+					</div>
+					<div class="middle">
+						<img src="img/dianhua.png" width="30px" />
+						<p class="ditu-line">——</p>
+						<p class="ditu-we">15617636995/18622987226 </p>
+					</div>
+					<div class="right">
+						<img src="img/email.png" width="30px" />
+						<p class="ditu-line">——</p>
+						<p class="ditu-we">sintany@1266.com </p>
+					</div>
+				</div>
+				<div class="section-inputss">			
+					<div class="section_3_input">
+						<h2 class="section-3-h2">告诉我们您的需求</h2>
+						<p class="section-3-p">我们将在一个工作日内回复，资料会保密处理</p>
+					</div>
+					<div class="section-3-input">
+						<label for="txt">姓名：</label><input type="text" id="txt" />
+					</div>
+					<div class="section-3-input section-3-phone">
+						<label for="phone">电话：</label><input type="text" id="phone" />
+					</div>
+					<div class="liuyan">
+						<label for="liuyan">留言：</label><textarea cols="30" rows="10" id="liuyan" ></textarea>
+					</div>
+					<div class="tijiao">
+						<input type="button" value="提交留言" />
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!--footer开始-->
+		<div class="footer">
+			<div class="footer_bg">
+				<div class="footer-lianjie">
+					<a href="#" class="footer-title">快速链接</a>
+					<ul class="footer-ul">
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<a href="#">产品中心</a>
+						</li>
+						<li>
+							<a href="#">工程案例</a>
+						</li>
+						<li>
+							<a href="#">新闻中心</a>
+						</li>
+						<li>
+							<a href="#">商学院</a>
+						</li>
+						<li>
+							<a href="#">招商加盟</a>
+						</li>
+						<li>
+							<a href="#">人才招聘</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-gongsi">
+					<a href="#" class="footer-title">快速链接</a>
+					<p>地址：郑州郑东新区绿地中心双子塔北塔3606</p>
+					<p>电话：400-0371-816</p>
+					<p>邮箱：Email:info@iwanmei.com.cn</p>
+				</div>
+				<div class="footer-erweima">
+					<a href="#" class="footer-title">关注我们</a>
+					<img src="img/erweima.png" />
+				</div>
+			</div>
+			<hr class="hr" />
+			<p class="footer-banquan">©COPYRIGHT 2004-2014 BYNCHEM.COM ALL RIGHTS RESERVED 版权所有
+				<a href="#">技术支持:春蕾科技</a>
+			</p>
+			<script>
+				$("#container").PageSwitch({
+					direction: 'horizontal',
+					easing: 'ease-in',
+					duration: 1000,
+					autoPlay: true,
+					loop: 'false'
+				});
+			</script>
+			<script type="text/javascript">
+				//创建和初始化地图函数：
+				function initMap() {
+					createMap(); //创建地图
+					setMapEvent(); //设置地图事件
+					addMapControl(); //向地图添加控件
+					addMapOverlay(); //向地图添加覆盖物
+				}
+
+				function createMap() {
+					map = new BMap.Map("map");
+					map.centerAndZoom(new BMap.Point(113.632909, 34.733732), 13);
+				}
+
+				function setMapEvent() {
+					map.enableScrollWheelZoom();
+					map.enableKeyboard();
+					map.enableDragging();
+					map.enableDoubleClickZoom()
+				}
+
+				function addClickHandler(target, window) {
+					target.addEventListener("click", function() {
+						target.openInfoWindow(window);
+					});
+				}
+
+				function addMapOverlay() {
+					var markers = [{
+						content: "爱万美",
+						title: "爱万美",
+						imageOffset: {
+							width: 0,
+							height: -21
+						},
+						position: {
+							lat: 34.730172,
+							lng: 113.639234
+						}
+					}];
+					for(var index = 0; index < markers.length; index++) {
+						var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+						var marker = new BMap.Marker(point, {
+							icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+								imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+							})
+						});
+						var label = new BMap.Label(markers[index].title, {
+							offset: new BMap.Size(25, 5)
+						});
+						var opts = {
+							width: 200,
+							title: markers[index].title,
+							enableMessage: false
+						};
+						var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+						marker.setLabel(label);
+						addClickHandler(marker, infoWindow);
+						map.addOverlay(marker);
+					};
+				}
+				//向地图添加控件
+				function addMapControl() {
+					var scaleControl = new BMap.ScaleControl({
+						anchor: BMAP_ANCHOR_BOTTOM_LEFT
+					});
+					scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+					map.addControl(scaleControl);
+					var navControl = new BMap.NavigationControl({
+						anchor: BMAP_ANCHOR_TOP_LEFT,
+						type: BMAP_NAVIGATION_CONTROL_LARGE
+					});
+					map.addControl(navControl);
+					var overviewControl = new BMap.OverviewMapControl({
+						anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+						isOpen: true
+					});
+					map.addControl(overviewControl);
+				}
+				var map;
+				initMap();
+			</script>
+		</div>
+	</body>
+
+</html>

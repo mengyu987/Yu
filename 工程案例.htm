@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/css.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<script type="text/javascript">
+			$(window).ready(function(){
+				$("#head-big").click(function(){
+					$("#search").fadeToggle();
+				})
+			})
+		</script>
+	</head>
+
+	<body>
+		<!--header开始-->
+		<div class="header">
+			<div class="header_bg">
+				<div class="logo">
+					<div class="logo_r">
+						<ul class="header-ul">
+							<li class="header-li">
+								<a href="#">网站首页</a>
+							</li>
+							<li class="header-li">
+								<a href="#">关于我们</a>
+							</li>
+							<li class="header-li">
+								<a href="#">产品中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">工程案例</a>
+							</li>
+							<li class="header-li">
+								<a href="#">新闻中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">商学院</a>
+							</li>
+							<li class="header-li">
+								<a href="#">招商加盟</a>
+							</li>
+							<li class="header-li">
+								<a href="#">人才招聘</a>
+							</li>
+							<li class="header-li">
+								<a href="#">联系我们</a>
+							</li>
+							<li class="header-big" id="head-big"><img src="img/bigjing.png" /></li>
+							<li class="header-phone">
+								<a href="javascript:"><img src="img/phone.png" />400-0371-816</a>
+							</li>
+						</ul>
+						<div class="hear-search" id="search">
+							<form action="#" method="post" >
+								<input type="text" placeholder="请输入你要查找的内容" />
+								<input type="button"  id="button"/>
+							</form>							
+						</div>
+					</div>
+					<div class="logo_l">
+						<img src="img/logo.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--banner开始-->
+		<div class="banner">
+			<div class="banner_bg">
+					<div id="slideBox" class="slideBox">
+						<div class="hd">
+							<ul><li></li><li></li><li></li></ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="#" target="_blank"><img src="img/banner.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="img/banner.jpg" /></a></li>
+								<li><a href="#" target="_blank"><img src="img/banner.jpg" /></a></li>
+							</ul>
+						</div>
+			
+						<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+						<a class="prev" href="javascript:void(0)"></a>
+						<a class="next" href="javascript:void(0)"></a>
+			
+					</div>
+					<script>
+					jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+					</script>
+		</div>
+		</div>
+
+		<!--section_1开始-->
+		<div class="section section_5">
+			<div class="section_bg section_5_bg">
+				<div class="location">
+					<a href="javascript:"><img src="img/hours.png" align="left" class="hours" width="25px" height="25px" /></a>
+					<p >当前位置：<a href="#">网站首页 </a>><a href="#"> 业务范围</a> </p>			
+				</div>
+				<div class="button">
+					<a href="#" id="gongsi">行业新闻</a>
+					<a href="#">公司新闻</a>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提高发的不发达的 is家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提高发的不发达的 i家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他s阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提高发的不发达的家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他 is阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提高发的不发达家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他的 is阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他高发的不发达的 is阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="data-div">
+					<!--<div class="date">
+						<p>02</p>
+						<p>2018/7</p>
+					</div>-->
+					<div class="date-news date-new">
+						<a href="#" class="scales"><img src="img/news.png" style="float: left;" width="178px" height="128px" /></a>
+						<h3><a href="#">家具漆刮花了怎么办(小诀窍)？</a></h3>
+						<p>家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他家具用久了难免会刮花，刮花了显得家具更加老旧，而且也可能遇到搬家需要搬家具让他以后他如何提高发的不发达的 is阿福建省的积分第三方觉得舒服就的撒发生富家大室就发大厦范德萨房间看电视地方非官方
+						</p>
+						<a href="#" class="section-more">查看更多</a>
+					</div>
+				</div>
+				<div class="number">
+					<ul>
+						<li><a href="#">上一页</a></li>
+						<div class="number_box">
+							<li><a href="#" class="thisclass">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</div>
+						<li><a href="#">下一页</a></li>
+					</ul>											
+				</div>
+				<div class="section-partner">
+					<h2>合作伙伴</h2>
+					<a href="javascript:"><img src="img/partner1.jpg" class="img1"/></a>
+					<a href="javascript:"><img src="img/partner2.jpg"/></a>
+					<a href="javascript:"><img src="img/partner3.jpg"/></a>
+					<a href="javascript:"><img src="img/partner4.jpg"/></a>
+					<a href="javascript:"><img src="img/partner5.jpg"/></a>
+					<a href="javascript:"><img src="img/partner6.jpg" class="img1"/></a>
+					<a href="javascript:"><img src="img/partner7.jpg"/></a>
+					<a href="javascript:"><img src="img/partner8.jpg"/></a>
+					<a href="javascript:"><img src="img/partner4.jpg"/></a>
+					<a href="javascript:"><img src="img/partner5.jpg"/></a>
+				</div>
+				
+			</div>
+		</div>
+
+		<!--footer开始-->
+		<div class="footer">
+			<div class="footer_bg">
+				<div class="footer-lianjie">
+					<a href="#" class="footer-title">快速链接</a>
+					<ul class="footer-ul">
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<a href="#">产品中心</a>
+						</li>
+						<li>
+							<a href="#">工程案例</a>
+						</li>
+						<li>
+							<a href="#">新闻中心</a>
+						</li>
+						<li>
+							<a href="#">商学院</a>
+						</li>
+						<li>
+							<a href="#">招商加盟</a>
+						</li>
+						<li>
+							<a href="#">人才招聘</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-gongsi">
+					<a href="#" class="footer-title">快速链接</a>
+					<p>地址：郑州郑东新区绿地中心双子塔北塔3606</p>
+					<p>电话：400-0371-816</p>
+					<p>邮箱：Email:info@iwanmei.com.cn</p>
+				</div>
+				<div class="footer-erweima">
+					<a href="#" class="footer-title">关注我们</a>
+					<img src="img/erweima.png" />
+				</div>
+			</div>
+			<hr class="hr" />
+			<p class="footer-banquan">©COPYRIGHT 2004-2014 BYNCHEM.COM ALL RIGHTS RESERVED 版权所有
+				<a href="#">技术支持:春蕾科技</a>
+			</p>
+		</div>
+	</body>
+
+</html>

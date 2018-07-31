@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/css.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/jquery.1.4.2-min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		$(window).ready(function(){
+				$("#head-big").click(function(){
+					$("#search").fadeToggle();
+				});
+		});
+		</script>
+		
+		<script type="text/javascript">
+					$(document).ready(function(){
+			 $(".slide_tit>li>a").on('click', function(event) {
+				var hash = this.hash;
+					 $('html, body').animate({
+				scrollTop: $(hash).offset().top-120
+				}, 800, );
+				 });
+			});
+		</script>
+	</head>
+
+	<body>
+		<!--header开始-->
+		<div class="header">
+			<div class="header_bg">
+				<div class="logo">
+					<div class="logo_r">
+						<ul class="header-ul">
+							<li class="header-li">
+								<a href="#">网站首页</a>
+							</li>
+							<li class="header-li">
+								<a href="#">关于我们</a>
+							</li>
+							<li class="header-li">
+								<a href="#">产品中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">工程案例</a>
+							</li>
+							<li class="header-li">
+								<a href="#">新闻中心</a>
+							</li>
+							<li class="header-li">
+								<a href="#">商学院</a>
+							</li>
+							<li class="header-li">
+								<a href="#">招商加盟</a>
+							</li>
+							<li class="header-li">
+								<a href="#">人才招聘</a>
+							</li>
+							<li class="header-li">
+								<a href="#">联系我们</a>
+							</li>
+							<li class="header-big" id="head-big"><img src="img/bigjing.png" /></li>
+							<li class="header-phone">
+								<a href="javascript:"><img src="img/phone.png" />400-0371-816</a>
+							</li>
+						</ul>
+						<div class="hear-search" id="search">
+							<form action="#" method="post">
+								<input type="text" placeholder="请输入你要查找的内容" />
+								<input type="button" id="button" />
+							</form>
+						</div>
+					</div>
+					<div class="logo_l">
+						<img src="img/logo.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--banner开始-->
+		<div class="banner">
+			<div class="banner_bg">
+				<div id="slideBox" class="slideBox">
+					<div class="hd">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="bd">
+						<ul>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+							<li>
+								<a href="#" target="_blank"><img src="img/banner.jpg" /></a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+					<a class="prev" href="javascript:void(0)"></a>
+					<a class="next" href="javascript:void(0)"></a>
+
+				</div>
+				<script>
+					jQuery(".slideBox").slide({
+						mainCell: ".bd ul",
+						autoPlay: true
+					});
+				</script>
+			</div>
+		</div>
+		<!--内容部分-->
+		<div class="section_6">
+			<div class="section_6_bg">
+				<br /><br />
+				<div class="section-6-left">
+					<div class="left-top">
+						<p>产品中心</p>
+						<ul>
+							<li><span></span>
+								<a href="javascript:">粉刷找平系统</a>
+							</li>
+							<li>
+								<a href="javascript:">粉刷石膏</a>
+							</li>
+							<li>
+								<a href="javascript:">腻子</a>
+							</li>
+							<li>
+								<a href="javascript:">墙固</a>
+							</li>
+						</ul>
+						<ul>
+							<li><span></span>
+								<a href="javascript:">瓷砖安装系统</a>
+							</li>
+							<li>
+								<a href="javascript:">厨卫防水</a>
+							</li>
+							<li>
+								<a href="javascript:">自流平</a>
+							</li>
+						</ul>
+					</div>
+					<div class="left-bottom">
+						<p>联系方式</p>
+
+						<ul>
+							<li><img src="img/kefu.png" /></li>
+							<li>联系人：彭经理</li>
+							<li>电话：18233659965</li>
+							<li>地址：郑州市金水区经三路农业路西南财富广场2号楼</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="section-7-right">
+					<div class="locations">
+						<a href="javascript:"><img src="img/hours.png" align="left" class="hours" width="25px" height="25px" /></a>
+						<p>当前位置：
+							<a href="#">网站首页 </a>>
+							<a href="#"> 业务范围</a>
+						</p>
+					</div>
+					<br />
+					<hr />
+					<div class="chanpin-banner">
+						<div class="preview">
+							<div id="vertical" class="bigImg">
+								<img src="img/chanpin.png" width="380px" height="400" align="left" id="midimg" />
+								<div style="display:none;" id="winSelector"></div>
+							</div><!--bigImg end-->	
+							<div class="smallImg">
+								<div class="scrollbutton smallImgUp disabled"></div>
+								<div id="imageMenu">
+									<ul>
+										<li id="onlickImg"><img src="img/chanpin.png" align="left"/></li>
+										<li><img src="img/advantage-1.png" align="left"/></li>
+										<li><img src="img/advantage-2.png" align="left"/></li>
+										<li><img src="img/advantage-3.png" align="left"/></li>
+										<li><img src="img/advantage-4.png" align="left"/></li>
+										<li><img src="img/advantage-5.png" align="left"/></li>
+										<li><img src="img/advantage-1.png" align="left"/></li>
+									</ul>
+								</div>
+								<div class="scrollbutton smallImgDown"><img src="img/d_09.png"/></div>
+							</div><!--smallImg end-->	
+							<div id="bigView" style="display:none;"><img width="800" height="800" align="left" /></div>
+						</div>
+					</div>
+					<div class="right-chanpin">
+						<h2><a href="#">瓷砖填缝剂（超细性）</a></h2>
+						<p style="margin-top: 30px;">规格型号：</p>
+						<p>品牌：</p>
+						<p>包装规格：</p>
+						<p>执行包装：</p>
+						<p style="font-size: 16px; margin-top: 20px;">价格：
+							<a href="javascript">3366</a>
+						</p>
+						<a href="javascript:" class="zaixian">在线咨询</a>
+						<a href="javascript:" class="zaixian dinggou">在线订购</a>
+						<a href="javascript:" class="dianhua"><img src="img/phone.png" />400-0371-816</a>
+					</div>
+					<div class="slideTxtBox_new">
+						<div class="right-button clear">
+							<ul>
+								<div class="slide_tit">
+									<li>
+										<a href="#aaa">产品概述</a>
+									</li>
+									<li>
+										<a href="#bbb">产品参数</a>
+									</li>
+									<li>
+										<a href="#ccc">适用范围</a>
+									</li>
+									<li>
+										<a href="#ddd">施工方法</a>
+									</li>
+								</div>
+								<div class="slide_tit">
+									<li>
+										<a href="javascript:">检验报告</a>
+									</li>
+								</div>
+							</ul>
+						</div>
+						<div class="gongneng clear">
+							<div class="gongneng_box">
+								<div class="gongneng_contair" id="aaa">
+									<h2>功能特点1-1</h2>
+									<br />
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+								</div>
+								<div class="gongneng_contair" id="bbb">
+									<h2>功能特点1-2</h2>
+									<br />
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+								</div>
+								<div class="gongneng_contair" id="ccc">
+									<h2>功能特点1-3</h2>
+									<br />
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p >4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+								</div>
+								<div class="gongneng_contair" id="ddd">
+									<h2>功能特点1-4</h2>
+									<br />
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+									<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+									<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+									<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+									<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+									<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+									<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+								</div>
+							</div>
+							<div class="gongneng_box">
+								<h2>功能特点2</h2>
+								<br />
+								<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+								<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+								<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+								<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+								<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+								<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+								<p>以优质乳液为基料精致而成，给您带来高效净味的居家环境；同时具有弥盖细微裂纹、耐擦洗、抗碱、加倍防霉、墙面持久亮丽等五大功能，多方位保护您家的墙面持久如新。</p>
+								<p>1、VOC： ≤10 g/L，为国标指标的1/12，为“环境保护标准”指标的1/5。 </p>
+								<p>2、游离甲醛：≤5 mg/kg，达到食品级标准，约为国标指标的1/20，约为“环境保护标准”指标的1/10。 </p>
+								<p>3、苯、甲苯、二甲苯、乙苯均未检出。 </p>
+								<p>4、重金属：国家仅对4类重金属进行管控，三棵树新标准达到11类，且限量标准优于国标、欧标、美标。 </p>
+								<p>5、气味控制：根据美国ASTM E544规范，参照汽车内饰零部件材料气味检测方法，制定了目前行业内还没有的气味判定标准，气味消散时间8小时以下。 以上数据是基于企标“Q/SKSP 022 水性净味环保涂料"进行测试</p>
+							</div>
+						</div>
+						<script type="text/javascript">
+							jQuery(".slideTxtBox_new").slide({
+								titCell: ".slide_tit",
+								mainCell: ".gongneng"
+							});
+						</script>
+						<script type="text/javascript">
+						$(document).ready(function() {
+							$(".slide_tit>li").hover(function() {
+								$(this).addClass("action");
+								$(this).siblings().removeClass("action");
+							});
+						});
+					</script>
+					</div>
+					<div class="sectino-7-input">
+						<h2>在线订购</h2>
+						<div class="section-inputs section-label">
+							<div class="section-xingming">
+								<label for="xingming" class="line-height">姓名：</label><input type="text" id="xingming" />
+							</div>
+							<div class="section-phones section-label">
+								<label for="phones" class="line-height">电话：</label><input type="text" id="phones" />
+							</div>
+							<div class="section-liuyan">
+								<label for="liuyans">需求：</label><textarea cols="30" rows="10" id="liuyans"></textarea>
+							</div>
+							<div class="section-tijiao">
+								<input type="button" value="提交" />
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!--footer开始-->
+		<div class="footer">
+			<div class="footer_bg">
+				<div class="footer-lianjie">
+					<a href="#" class="footer-title">快速链接</a>
+					<ul class="footer-ul">
+						<li>
+							<a href="#">关于我们</a>
+						</li>
+						<li>
+							<a href="#">产品中心</a>
+						</li>
+						<li>
+							<a href="#">工程案例</a>
+						</li>
+						<li>
+							<a href="#">新闻中心</a>
+						</li>
+						<li>
+							<a href="#">商学院</a>
+						</li>
+						<li>
+							<a href="#">招商加盟</a>
+						</li>
+						<li>
+							<a href="#">人才招聘</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-gongsi">
+					<a href="#" class="footer-title">快速链接</a>
+					<p>地址：郑州郑东新区绿地中心双子塔北塔3606</p>
+					<p>电话：400-0371-816</p>
+					<p>邮箱：Email:info@iwanmei.com.cn</p>
+				</div>
+				<div class="footer-erweima">
+					<a href="#" class="footer-title">关注我们</a>
+					<img src="img/erweima.png" />
+				</div>
+			</div>
+			<hr class="hr" />
+			<p class="footer-banquan">©COPYRIGHT 2004-2014 BYNCHEM.COM ALL RIGHTS RESERVED 版权所有
+				<a href="#">技术支持:春蕾科技</a>
+			</p>
+			<script>
+				$("#container").PageSwitch({
+					direction: 'horizontal',
+					easing: 'ease-in',
+					duration: 1000,
+					autoPlay: true,
+					loop: 'false'
+				});
+			</script>
+		</div>
+	</body>
+
+</html>

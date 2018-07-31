@@ -1,0 +1,38 @@
+*{padding: 0px; margin: 0px;}
+/*body{min-width: px;}*/
+body{font-family: "微软雅黑"; font-size: 14px;}
+ol,ul,li { list-style:none; }
+span{display: block;}
+img{border: none;}
+a { color:#333; text-decoration:none; /*display: block;*/}
+a:hover { text-decoration:none; /*transform: translate(0,0);transition:all 0.2s linear 0s;*/}
+
+.clear{clear: both;}
+
+
+/*@font-face{
+		  font-family: FuturaBoldBT;
+		  src:url(../font/Futura-Bold-BT.ttf),
+			  url(../font/Futura-Bold-BT.eot),
+			  url(../font/Futura-Bold-BT.woff),
+			  url(../font/Futura-Bold-BT.svg);
+			}*/
+
+
+
+/*.current{
+	background:#f8b551 !important; color:#018a6e !important;
+}
+.bsd{
+	box-shadow: 1px 1px 2px #dddddd;
+}
+.on{
+	color: #f8b551 !important;
+}*/
+
+
+
+
+/*怪异盒子兼容*/ /*-moz-box-sizing: border-box;  -webkit-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;*/
+/*圆角兼容*/ /*-moz-border-radius-topleft:4px;-moz- border- radius-topright:4px;-moz-border-radius-bottomleft:4px;-moz- border- radius- bottomright:4px;*/
+/*透明度兼容*/ /*filter:alpha(opacity=50);*/
